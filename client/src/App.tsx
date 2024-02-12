@@ -56,7 +56,8 @@ function App() {
         </button>
         <button
           onClick={() => refetch()}
-          className={`${BUTTON_CLASSES} ${graphData === 'db' ? 'pointer-events-none opacity-50' : ''}`}
+          disabled={graphData === 'db'}
+          className={`${BUTTON_CLASSES} ${graphData === 'db' ? 'opacity-50' : ''}`}
         >
           Refresh Random Data
         </button>
